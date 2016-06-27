@@ -78,7 +78,7 @@ class BrokerProxy(
   var firstCall = true
 
   var simpleConsumer = createSimpleConsumer()
-
+  //register broker proxy metrics by host-port pair
   metrics.registerBrokerProxy(host, port)
 
   def createSimpleConsumer() = {
